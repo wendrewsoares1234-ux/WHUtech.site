@@ -1,0 +1,195 @@
+{
+  "direction": {
+    "app_type": "marketing_site",
+    "ambition": "A2 CLEAN",
+    "mode": "dark",
+    "rail": "whatsapp",
+    "spine": [
+      "Header",
+      "Hero",
+      "Differentiators",
+      "Services_Catalog_Tabs",
+      "Process_Timeline",
+      "About_Us",
+      "Quote_Form",
+      "FAQ",
+      "Contact",
+      "Footer",
+      "Floating_WhatsApp"
+    ],
+    "name": "WhuTech",
+    "tone": "clean/dark, technological, elegant, professional",
+    "axes": {
+      "innovation": "high",
+      "trust": "high",
+      "futuristic": "moderate"
+    }
+  },
+  "typography": {
+    "primary_font": "Manrope",
+    "secondary_font": "Inter",
+    "scale": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tighter leading-tight",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+      "h3": "text-xl sm:text-2xl font-semibold tracking-tight",
+      "h4": "text-lg sm:text-xl font-semibold",
+      "body": "text-base leading-relaxed text-[#A8B2C3]",
+      "body_small": "text-sm leading-relaxed text-[#A8B2C3]",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-[#0866FF]"
+    },
+    "guidelines": "Do not exceed text-6xl for Hero headings. Never use Inter for Headings; it is strictly for body copy. Use Manrope for all Headings."
+  },
+  "colors": {
+    "background_primary": "#030712",
+    "background_secondary": "#07152B",
+    "surface_card": "#111827",
+    "primary_blue": "#0866FF",
+    "highlight_blue": "#168BFF",
+    "border": "#30394A",
+    "text_main": "#F5F7FC",
+    "text_secondary": "#A8B2C3",
+    "guidelines": "Use the exact palette provided. Do not introduce new colors. Ensure minimum 4.5:1 contrast for normal text and 3:1 for large text. Hover states for interactive elements must use the highlight_blue (#168BFF) or a slightly lighter/darker variant."
+  },
+  "visual_enhancers": {
+    "shadows": {
+      "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.5)",
+      "md": "0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3)",
+      "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3)",
+      "glow": "0 0 20px rgba(8, 102, 255, 0.15)"
+    },
+    "borders": {
+      "default": "1px solid #30394A",
+      "interactive": "1px solid #0866FF"
+    },
+    "glassmorphism": "Use bg-[#030712]/80 with backdrop-blur-xl and a border-b border-[#30394A] for the sticky header. NEVER use pure transparent backgrounds over content."
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing. Use p-8, p-12, p-16 for structural padding to let content breathe.",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_gaps": "gap-8 lg:gap-12",
+    "section_spacing": "py-20 lg:py-32"
+  },
+  "motion": {
+    "philosophy": "Subtle, professional, reduced-motion aware. No overwhelming parallax.",
+    "hover_states": "translate-y-[-2px] shadow-lg transition-all duration-300 ease-out",
+    "entrances": "Fade in with slight upward translation (e.g., from opacity 0, translate-y-4 to opacity 1, translate-y-0)",
+    "tabs": "Smooth cross-fade between tab content.",
+    "accordion": "Smooth height expansion/collapse for FAQ."
+  },
+  "components_specs": {
+    "Header": {
+      "type": "fixed",
+      "glassmorphism": true,
+      "logo": "/assets/logo-simplificada.png",
+      "nav_links": ["Início", "Sites", "Soluções NFC", "Sistemas", "Suporte e manutenção", "Sobre nós", "Contato"],
+      "cta": "Falar com a WhuTech"
+    },
+    "Hero": {
+      "logo": "/assets/logo-completa.png",
+      "title": "Tecnologia que impulsiona o seu negócio.",
+      "subtitle": "Sites, sistemas, soluções NFC e suporte tecnológico para facilitar sua rotina, conectar seus clientes e levar sua empresa mais longe.",
+      "ctas": ["Conhecer nossos serviços", "Falar com um especialista"]
+    },
+    "Differentiators": {
+      "layout": "grid md:grid-cols-2 lg:grid-cols-4 gap-6",
+      "items": ["Soluções tecnológicas personalizadas", "Atendimento próximo e direto", "Tecnologia aplicada ao comércio", "Desenvolvimento, reparação e suporte"]
+    },
+    "Services_Catalog": {
+      "type": "Tabs",
+      "orientation": "horizontal on desktop, scrollable horizontal on mobile",
+      "tabs": [
+        "Desenvolvimento e reparação de sites",
+        "Placas de apresentação NFC",
+        "Cardápios NFC interativos",
+        "Outras soluções NFC",
+        "Sistemas e ferramentas digitais",
+        "Manutenção de software",
+        "Manutenção de hardware",
+        "Suporte técnico",
+        "Consultoria e soluções personalizadas"
+      ],
+      "content_structure": "O que é / Como funciona / O que podemos fazer por você / Exemplo prático / Como contratar / Botão WhatsApp"
+    },
+    "Process_Timeline": {
+      "title": "Como trabalhamos",
+      "steps": ["01 Contar necessidade", "02 Avaliar solução", "03 Apresentar proposta", "04 Executar serviço aprovado"]
+    },
+    "About_Us": {
+      "title": "Tecnologia próxima de quem faz acontecer.",
+      "content": "Institucional sobre Wendrew Soares e Hugo Manoel. NO FAKE TITLES OR DEGREES."
+    },
+    "Quote_Form": {
+      "fields": ["Nome", "Empresa (opcional)", "Meio de contato para retorno", "Serviço desejado", "Descrição da necessidade"],
+      "action": "Save to DB (mock/simulated if no backend) and guide user to WhatsApp. Never show simple 'Sent successfully' without WA handoff."
+    },
+    "FAQ": {
+      "type": "Accordion",
+      "count": 13,
+      "note": "Populate with highly relevant IT/Service questions."
+    },
+    "Contact": {
+      "title": "Vamos transformar sua necessidade em uma solução.",
+      "info": ["Ibaté — SP", "WhatsApp", "E-mail"],
+      "ctas": ["WhatsApp", "E-mail"]
+    },
+    "Floating_Button": {
+      "type": "WhatsApp",
+      "position": "fixed bottom-6 right-6 z-50",
+      "aria_label": "Fale conosco"
+    }
+  },
+  "build_manifest": {
+    "direction": {
+      "app_type": "marketing_site",
+      "mode": "dark",
+      "rail": "whatsapp",
+      "name": "WhuTech"
+    },
+    "tone_tokens": {
+      "font_families": {
+        "heading": "Manrope, sans-serif",
+        "body": "Inter, sans-serif"
+      },
+      "colors": {
+        "ground": "#030712",
+        "surface": "#111827",
+        "ink": "#F5F7FC",
+        "muted": "#A8B2C3",
+        "accent": "#0866FF"
+      },
+      "radius": "rounded-lg"
+    },
+    "conversion_wiring": {
+      "primary_action": "whatsapp",
+      "whatsapp_url": "https://wa.me/qr/HXWHPCCA6DXKB1",
+      "email": "wendrewsoares1234@gmail.com",
+      "behavior": "All contact/CTA buttons must route to the provided WhatsApp link or trigger the Quote Form."
+    },
+    "fabrication_guardrails": [
+      "DO NOT invent physical addresses (use only Ibaté, São Paulo, Brasil).",
+      "DO NOT invent prices.",
+      "DO NOT invent client testimonials.",
+      "DO NOT invent certifications.",
+      "DO NOT invent client quantities.",
+      "DO NOT invent years of experience.",
+      "DO NOT invent academic degrees for founders."
+    ],
+    "locale": {
+      "language": "pt-BR"
+    }
+  },
+  "instructions_to_main_agent": "Strictly adhere to the exact color hex codes and fonts provided. Do not use generic tailwind colors like 'blue-600'; use the provided primary_blue. You must build out all 9 tabs of the Services Catalog with rich, distinct content for each. Do not use placeholder text for the services. Construct a timeline for 'How we work' and an accordion for the 13 FAQs. Ensure all files are Javascript (.js/.jsx) as requested, NOT Typescript.",
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts. Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur), but ensure backgrounds have some opacity (e.g., bg-[#030712]/80). NO completely transparent backgrounds behind text.",
+    "You MUST NOT apply universal transition (e.g., transition: all). Add transitions for specific properties.",
+    "You MUST NOT center align the app container in global CSS.",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "All interactive and key informational elements MUST include a data-testid attribute (e.g., data-testid='hero-cta-button').",
+    "Use Lucide React for all iconography.",
+    "Important: The project uses .js/.jsx files. When generating Shadcn UI components, output Javascript, NOT Typescript."
+  ]
+}
